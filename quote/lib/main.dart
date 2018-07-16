@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Quote',
       theme: new ThemeData(
         // This is the theme of your application.
         //
@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
         // "hot reload" (press "r" in the console where you ran "flutter run",
         // or press Run > Flutter Hot Reload in IntelliJ). Notice that the
         // counter didn't reset back to zero; the application is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
+      home: new MyHomePage(title: 'Flutter Quote Home Page'),
     );
   }
 }
@@ -90,11 +90,12 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Text(
-              'You have pushed the button this many times:',
+              'Archbishop Oscar Romero | ',
+              style: Theme.of(context).textTheme.display2
             ),
             new Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+              'We are prophets of a future not our own.',
+              style: Theme.of(context).textTheme.display1
             ),
           ],
         ),
